@@ -48,13 +48,21 @@
             {{ride.status}}</span>
 					<span *ngIf="ride.status=='ACCEPTED'" id="span" class="label label-success" style="background-color:darkblue;color:white;">
             {{ride.status}}</span>
+					<span *ngIf="ride.status=='PENDING'" id="span" class="label label-success" style="background-color:orange;color:white;">
+            {{ride.status}}</span>
 					<span *ngIf="ride.status=='CANCELLED'" id="span" class="label label-success" style="background-color:red;color:white;">
             {{ride.status}}</span>
 				</td>
 				<td class="text-center">
 					<span class="menu-action hiderow22">
-            <a id="22" data-original-title="delete" data-toggle="tooltip" data-placement="top" 
-          class="pl-1 pr-1 btnaction menu-icon vd_bd-red vd_red">View</a>        
+            <a *ngIf="ride.status=='COMPLETED' || ride.status=='CANCELLED' || ride.status=='PENDING'" id="22" data-original-title="delete" data-toggle="tooltip" data-placement="top" 
+          class="pl-1 pr-1 btnaction menu-icon vd_bd-red vd_red">View</a> 
+          <a *ngIf="ride.status!='COMPLETED' && ride.status!='CANCELLED' && ride.status!='PENDING'" id="22" data-original-title="delete" data-toggle="tooltip" data-placement="top" 
+          class="pl-1 pr-1 btnaction menu-icon vd_bd-red vd_red">Track</a> 
+                    <a *ngIf="ride.status=='PENDING'" id="22" data-original-title="delete" data-toggle="tooltip" data-placement="top" 
+          class="pl-1 pr-1 btnaction menu-icon vd_bd-red vd_red">Accept</a>  
+           <a *ngIf="ride.status!='COMPLETED' && ride.status!='CANCELLED' && ride.status!='ACCEPTED'" id="22" data-original-title="delete" data-toggle="tooltip" data-placement="top" 
+          class="pl-1 pr-1 btnaction menu-icon vd_bd-red vd_red">Cancel</a>               
           </span>
 				</td>
 			</tr>

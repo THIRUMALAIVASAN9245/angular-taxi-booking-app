@@ -52,6 +52,17 @@ export class RideDetailsComponent implements OnInit {
         pickupDate: new Date("1990-02-02"),
         dropAddress: "Delhi, India",
         dropDate: new Date("1990-02-02"),
+        amount: "743",
+        paymentStatus: "",
+        status: "PENDING"
+      },
+      {
+        driverName: "Scorpio Driver",
+        customerName: "Thirumalai",
+        pickupAddress: "tTadwadi, Surat, Gujarat, India",
+        pickupDate: new Date("1990-02-02"),
+        dropAddress: "Delhi, India",
+        dropDate: new Date("1990-02-02"),
         amount: "262",
         paymentStatus: "PAID",
         status: "COMPLETED"
