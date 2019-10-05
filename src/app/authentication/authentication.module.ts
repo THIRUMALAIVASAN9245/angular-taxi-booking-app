@@ -10,7 +10,7 @@ import { BsDatepickerModule } from 'ngx-bootstrap';
 import { AuthenticationRouting } from './authentication.routing';
 import { AuthComponent } from './auth.component';
 
-import { RegistrationDetailsComponent } from './registration.component';
+import { RegistrationDetailsComponent } from './registration/registration.component';
 
 @NgModule({
   declarations: [
