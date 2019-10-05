@@ -4,7 +4,6 @@
 	</div>
 </div>
 
-
 <div class="row">
 	<div class="col text-right pt-2 pb-2">
 		<button class="btn btn-primary">Add Driver</button>
@@ -24,17 +23,17 @@
 			</tr>
 		</thead>
 		<tbody>
-			<tr *ngFor="let user of userDetails; let i= index">
-				<td>{{user.name}}</td>
-				<td>{{user.mobile}}</td>
-				<td>{{user.email}}</td>
-				<td>{{user.dateofbirth | date: 'dd/MM/yyyy'}}</td>
-				<td>{{user.vehicleNumber}}</td>
+			<tr *ngFor="let driver of driverDetails; let i= index">
+				<td>{{driver.name}}</td>
+				<td>{{driver.mobile}}</td>
+				<td>{{driver.email}}</td>
+				<td>{{driver.dateofbirth | date: 'dd/MM/yyyy'}}</td>
+				<td>{{driver.vehicleNumber}}</td>
 				<td class="text-center">
-					<span *ngIf="user.status=='Active'" id="span" class="label label-success" style="background-color:green;color:white;">
-            {{user.status}}</span>
-					<span *ngIf="user.status=='InActive'" id="span" class="label label-success" style="background-color:red;color:white;">
-            {{user.status}}</span>
+					<span *ngIf="driver.status=='Active'" id="span" class="label label-success" style="background-color:green;color:white;">
+            {{driver.status}}</span>
+					<span *ngIf="driver.status=='InActive'" id="span" class="label label-success" style="background-color:red;color:white;">
+            {{driver.status}}</span>
 				</td>
 				<td class="text-center">
 					<span class="menu-action hiderow22">

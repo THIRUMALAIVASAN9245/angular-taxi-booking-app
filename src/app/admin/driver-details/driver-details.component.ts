@@ -6,12 +6,12 @@ import { Component, OnInit } from '@angular/core';
     templateUrl: './driver-details.component.html'
 })
 export class DriverDetailsComponent implements OnInit {
- userDetails: any[];
+driverDetails: any[];
 
   constructor() { }
 
   ngOnInit(): void {
-    this.userDetails = [
+    this.driverDetails = [
       {
         name: "Thirumalai",
         mobile: 912345678,
