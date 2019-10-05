@@ -6,6 +6,7 @@ import { UserDetailsComponent } from './admin/user-details/user-details.componen
 import { PaymentDetailsComponent } from './admin/payment-details/payment-details.component';
 import { DriverDetailsComponent } from './admin/driver-details/driver-details.component';
 import { RideDetailsComponent } from './admin/ride-details/ride-details.component';
+import { RegistrationDetailsComponent } from './registration/registration.component';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: '/user-details', pathMatch: 'full' },
@@ -13,6 +14,7 @@ const appRoutes: Routes = [
   {path: "driver-details", component: DriverDetailsComponent},
   {path: "payment-details", component: PaymentDetailsComponent},
   {path: "ride-details", component: RideDetailsComponent},
+  {path: "registration", component: RegistrationDetailsComponent},
   {path: "dashboard", component: DashBoardComponent}
 ];
 

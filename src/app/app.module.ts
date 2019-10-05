@@ -17,6 +17,7 @@ import { UserDetailsComponent } from './admin/user-details/user-details.componen
 import { PaymentDetailsComponent } from './admin/payment-details/payment-details.component';
 import { DriverDetailsComponent } from './admin/driver-details/driver-details.component';
 import { RideDetailsComponent } from './admin/ride-details/ride-details.component';
+import { RegistrationDetailsComponent } from './registration/registration.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { RideDetailsComponent } from './admin/ride-details/ride-details.componen
     UserDetailsComponent,
     DriverDetailsComponent,
     PaymentDetailsComponent,
-    RideDetailsComponent
+    RideDetailsComponent,
+    RegistrationDetailsComponent
   ],
   imports: [
     BrowserModule,
