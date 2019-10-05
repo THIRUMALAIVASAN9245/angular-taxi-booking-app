@@ -5,19 +5,18 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { Ng4LoadingSpinnerModule } from 'ng4-loading-spinner';
+import { BsDatepickerModule } from 'ngx-bootstrap';
 
 import { AppRouting } from './app.routing';
 import { AppComponent } from './app.component';
-
-import { HomeComponent } from './home/home.component';
-import { DashBoardComponent } from './dashboard/dashboard.component';
-import { ContactCreateComponent } from './contact-create/contact-create.component';
-import { ContactListComponent } from './contact-list/contact-list.component';
 import { HeaderComponent } from './common/header/header.component';
 import { FooterComponent } from './common/footer/footer.component';
 
-import { BsDatepickerModule } from 'ngx-bootstrap';
-import { ResourceDetailsComponent } from './resource-details/resource-details.component';
+import { DashBoardComponent } from './dashboard/dashboard.component';
+import { UserDetailsComponent } from './admin/user-details/user-details.component';
+import { PaymentDetailsComponent } from './admin/payment-details/payment-details.component';
+import { DriverDetailsComponent } from './admin/driver-details/driver-details.component';
+import { RideDetailsComponent } from './admin/ride-details/ride-details.component';
 
 @NgModule({
   declarations: [
@@ -25,10 +24,10 @@ import { ResourceDetailsComponent } from './resource-details/resource-details.co
     HeaderComponent,
     FooterComponent,
     DashBoardComponent,
-    ContactCreateComponent,
-    ContactListComponent,
-    ResourceDetailsComponent,
-    HomeComponent
+    UserDetailsComponent,
+    DriverDetailsComponent,
+    PaymentDetailsComponent,
+    RideDetailsComponent
   ],
   imports: [
     BrowserModule,
@@ -44,3 +43,4 @@ import { ResourceDetailsComponent } from './resource-details/resource-details.co
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+// http://icanstudioz.com/taxiapp/admin/users
