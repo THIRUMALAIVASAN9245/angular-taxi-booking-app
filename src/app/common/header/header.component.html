@@ -1,44 +1,46 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary rounded bg-white">
-  <ul class="navbar-nav mr-auto">
-    <li class="nav-item">
-      <a>
-        <svg height="50" width="200" style="font-size: 35px;font-weight: bold;font-family: Georgia,serif;">
-          <text x="0" y="40" fill="#e2542f">TaxiBook</text>
-         TaxiBook Solutions
-        </svg>
-      </a>
-    </li>
-  </ul>
-  <ul class="navbar-nav ml-auto d-none d-sm-block">
-    <li class="nav-item">
-      <a> <img title="Cognizant Technology Solutions" alt="Cognizant Technology Solutions" class="cog-logo nav-logo display-none"
-          src="./assets/COG-Logo-White.svg">
-      </a>
-    </li>
-  </ul>
-</nav>
-
-<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top bg-blue">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
     aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarCollapse">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a [routerLinkActive]="['active']" class="nav-link text-capitalize" routerLink="/user-details">Users</a>
-      </li>
-      <li class="nav-item">
-        <a [routerLinkActive]="['active']" class="nav-link text-capitalize" routerLink="/driver-details">Drivers</a>
-      </li>
-        <li class="nav-item">
-        <a [routerLinkActive]="['active']" class="nav-link text-capitalize" routerLink="/ride-details">Rides</a>
-      </li>
-      <li class="nav-item">
-        <a [routerLinkActive]="['active']" class="nav-link text-capitalize" routerLink="/payment-details">Payment</a>
-      </li>
-    </ul>
-    <!-- <ul class="navbar-nav ml-auto">
+	<ul class="navbar-nav mr-auto">
+		<li class="nav-item">
+			<a>
+				<svg height="50" width="200" style="font-size: 35px;font-weight: bold;font-family: Georgia,serif;">
+					<text x="0" y="40" fill="#e2542f">TaxiBook</text>
+					TaxiBook Solutions
+				</svg>
+			</a>
+		</li>
+	</ul>
+	<ul class="navbar-nav ml-auto d-none d-sm-block">
+		<li class="nav-item">
+			<a> <img title="Cognizant Technology Solutions" alt="Cognizant Technology Solutions" class="cog-logo nav-logo display-none"
+          src="./assets/COG-Logo-White.svg">
+      </a>
+		</li>
+	</ul>
+</nav>
+
+<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top bg-blue">
+	<div class="collapse navbar-collapse" id="navbarCollapse">
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item">
+				<a [routerLinkActive]="['active']" class="nav-link text-capitalize" routerLink="/user-details">Users</a>
+			</li>
+			<li class="nav-item">
+				<a [routerLinkActive]="['active']" class="nav-link text-capitalize"
+					routerLink="/driver-details">Drivers</a>
+			</li>
+			<li class="nav-item">
+				<a [routerLinkActive]="['active']" class="nav-link text-capitalize" routerLink="/ride-details">Rides</a>
+			</li>
+			<li class="nav-item">
+				<a [routerLinkActive]="['active']" class="nav-link text-capitalize"
+					routerLink="/payment-details">Payment</a>
+			</li>
+		</ul>
+		<!-- <ul class="navbar-nav ml-auto">
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
           aria-haspopup="true" aria-expanded="false"> Thirumalaivasan (568182)</a>
@@ -47,6 +49,6 @@
         </div>
       </li>
     </ul> -->
-  </div>
+	</div>
 </nav>
 <div style="background-color: #421853;padding-top: 15px;"></div>
