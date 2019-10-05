@@ -1,17 +1,17 @@
 import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { ContactListComponent } from './contact-list/contact-list.component';
-import { ContactCreateComponent } from './contact-create/contact-create.component';
-import { HomeComponent } from './home/home.component';
+
 import { DashBoardComponent } from './dashboard/dashboard.component';
-import { ResourceDetailsComponent } from './resource-details/resource-details.component';
+import { UserDetailsComponent } from './admin/user-details/user-details.component';
+import { PaymentDetailsComponent } from './admin/payment-details/payment-details.component';
+import { DriverDetailsComponent } from './admin/driver-details/driver-details.component';
 
 const appRoutes: Routes = [
-  { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
-  {path: "contact-create", component: ContactCreateComponent},
-  {path: "plan-detail", component: ContactListComponent},
-  {path: "dashboard", component: DashBoardComponent},
-  {path: "resource-details", component: ResourceDetailsComponent}
+  { path: '', redirectTo: '/user-details', pathMatch: 'full' },
+  {path: "user-details", component: UserDetailsComponent},
+  {path: "driver-details", component: PaymentDetailsComponent},
+  {path: "payment-details", component: DriverDetailsComponent},
+  {path: "dashboard", component: DashBoardComponent}
 ];
 
 export const AppRouting: ModuleWithProviders = RouterModule.forRoot(appRoutes);
