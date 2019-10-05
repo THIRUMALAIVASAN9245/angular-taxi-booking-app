@@ -7,29 +7,26 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { Ng4LoadingSpinnerModule } from 'ng4-loading-spinner';
 import { BsDatepickerModule } from 'ngx-bootstrap';
 
-import { AppRouting } from './app.routing';
-import { AppComponent } from './app.component';
+import { AdminRouting } from './admin.routing';
+import { AdminComponent } from './admin.component';
+
 import { HeaderComponent } from './common/header/header.component';
 import { FooterComponent } from './common/footer/footer.component';
 
-import { DashBoardComponent } from './dashboard/dashboard.component';
-import { UserDetailsComponent } from './admin/user-details/user-details.component';
-import { PaymentDetailsComponent } from './admin/payment-details/payment-details.component';
-import { DriverDetailsComponent } from './admin/driver-details/driver-details.component';
-import { RideDetailsComponent } from './admin/ride-details/ride-details.component';
-import { RegistrationDetailsComponent } from './registration/registration.component';
+import { UserDetailsComponent } from './user-details/user-details.component';
+import { PaymentDetailsComponent } from './payment-details/payment-details.component';
+import { DriverDetailsComponent } from './driver-details/driver-details.component';
+import { RideDetailsComponent } from './ride-details/ride-details.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
+    AdminComponent,
     HeaderComponent,
     FooterComponent,
-    DashBoardComponent,
     UserDetailsComponent,
     DriverDetailsComponent,
     PaymentDetailsComponent,
-    RideDetailsComponent,
-    RegistrationDetailsComponent
+    RideDetailsComponent
   ],
   imports: [
     BrowserModule,
@@ -39,10 +36,9 @@ import { RegistrationDetailsComponent } from './registration/registration.compon
     ReactiveFormsModule,
     BrowserAnimationsModule,
     BsDatepickerModule.forRoot(),
-    AppRouting
+    AdminRouting
   ],
   providers: [],
-  bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AdminModule { }
 // http://icanstudioz.com/taxiapp/admin/users
