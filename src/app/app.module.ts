@@ -9,7 +9,6 @@ import { Ng4LoadingSpinnerModule } from 'ng4-loading-spinner';
 import { AppRouting } from './app.routing';
 import { AppComponent } from './app.component';
 
-import { HomeComponent } from './home/home.component';
 import { DashBoardComponent } from './dashboard/dashboard.component';
 import { ContactCreateComponent } from './contact-create/contact-create.component';
 import { ContactListComponent } from './contact-list/contact-list.component';
@@ -27,8 +26,7 @@ import { ResourceDetailsComponent } from './resource-details/resource-details.co
     DashBoardComponent,
     ContactCreateComponent,
     ContactListComponent,
-    ResourceDetailsComponent,
-    HomeComponent
+    ResourceDetailsComponent
   ],
   imports: [
     BrowserModule,

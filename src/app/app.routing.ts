@@ -11,8 +11,7 @@ const appRoutes: Routes = [
   {path: "contact-create", component: ContactCreateComponent},
   {path: "plan-detail", component: ContactListComponent},
   {path: "dashboard", component: DashBoardComponent},
-  {path: "resource-details", component: ResourceDetailsComponent},
-  { path: 'home', component: HomeComponent }
+  {path: "resource-details", component: ResourceDetailsComponent}
 ];
 
 export const AppRouting: ModuleWithProviders = RouterModule.forRoot(appRoutes);
