@@ -10,8 +10,8 @@ import { BsDatepickerModule } from 'ngx-bootstrap';
 import { AdminRouting } from './admin.routing';
 import { AdminComponent } from './admin.component';
 
-import { HeaderComponent } from './common/header/header.component';
-import { FooterComponent } from './common/footer/footer.component';
+import { HeaderComponent } from './../common/header/header.component';
+import { FooterComponent } from './../common/footer/footer.component';
 
 import { UserDetailsComponent } from './user-details/user-details.component';
 import { PaymentDetailsComponent } from './payment-details/payment-details.component';

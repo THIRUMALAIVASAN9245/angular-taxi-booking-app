@@ -7,15 +7,21 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { Ng4LoadingSpinnerModule } from 'ng4-loading-spinner';
 import { BsDatepickerModule } from 'ngx-bootstrap';
 
-import { AuthenticationRouting } from './app.routing';
-import { AuthComponent } from './app.component';
+import { AuthenticationRouting } from './authentication.routing';
+import { AuthComponent } from './auth.component';
 
-import { RegistrationDetailsComponent } from './registration/registration.component';
+import { RegistrationComponent } from './registration/registration.component';
+import { CustomerComponent } from './registration/customer/customer.component';
+import { DriverComponent } from './registration/driver/driver.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
     AuthComponent,
-    RegistrationDetailsComponent
+    RegistrationComponent,
+    CustomerComponent,
+    DriverComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

@@ -9,27 +9,16 @@ import { BsDatepickerModule } from 'ngx-bootstrap';
 
 import { AppRouting } from './app.routing';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './common/header/header.component';
-import { FooterComponent } from './common/footer/footer.component';
+
+import { AuthenticationModule } from './authentication/authentication.module';
+import { AdminModule } from './admin/admin.module';
 
 import { DashBoardComponent } from './dashboard/dashboard.component';
-import { UserDetailsComponent } from './admin/user-details/user-details.component';
-import { PaymentDetailsComponent } from './admin/payment-details/payment-details.component';
-import { DriverDetailsComponent } from './admin/driver-details/driver-details.component';
-import { RideDetailsComponent } from './admin/ride-details/ride-details.component';
-import { RegistrationDetailsComponent } from './registration/registration.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    FooterComponent,
-    DashBoardComponent,
-    UserDetailsComponent,
-    DriverDetailsComponent,
-    PaymentDetailsComponent,
-    RideDetailsComponent,
-    RegistrationDetailsComponent
+    DashBoardComponent
   ],
   imports: [
     BrowserModule,
@@ -39,6 +28,8 @@ import { RegistrationDetailsComponent } from './registration/registration.compon
     ReactiveFormsModule,
     BrowserAnimationsModule,
     BsDatepickerModule.forRoot(),
+    AuthenticationModule,
+    AdminModule,
     AppRouting
   ],
   providers: [],
