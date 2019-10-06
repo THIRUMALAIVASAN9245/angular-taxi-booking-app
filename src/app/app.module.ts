@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http'; 
+import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { Ng4LoadingSpinnerModule } from 'ng4-loading-spinner';
@@ -12,6 +12,8 @@ import { AppComponent } from './app.component';
 
 import { AuthenticationModule } from './authentication/authentication.module';
 import { AdminModule } from './admin/admin.module';
+
+import { AuthService } from './providers/services/auth.service';
 
 import { DashBoardComponent } from './dashboard/dashboard.component';
 
@@ -32,7 +34,9 @@ import { DashBoardComponent } from './dashboard/dashboard.component';
     AdminModule,
     AppRouting
   ],
-  providers: [],
+  providers: [
+    AuthService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
