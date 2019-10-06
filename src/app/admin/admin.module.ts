@@ -14,7 +14,6 @@ import { HeaderComponent } from './../common/header/header.component';
 import { FooterComponent } from './../common/footer/footer.component';
 
 import { UserDetailsComponent } from './user-details/user-details.component';
-import { PaymentDetailsComponent } from './payment-details/payment-details.component';
 import { DriverDetailsComponent } from './driver-details/driver-details.component';
 import { RideDetailsComponent } from './ride-details/ride-details.component';
 
@@ -25,7 +24,6 @@ import { RideDetailsComponent } from './ride-details/ride-details.component';
     FooterComponent,
     UserDetailsComponent,
     DriverDetailsComponent,
-    PaymentDetailsComponent,
     RideDetailsComponent
   ],
   imports: [
@@ -41,4 +39,3 @@ import { RideDetailsComponent } from './ride-details/ride-details.component';
   providers: [],
 })
 export class AdminModule { }
-// http://icanstudioz.com/taxiapp/admin/users

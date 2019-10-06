@@ -36,4 +36,3 @@ import { LoginComponent } from './login/login.component';
   providers: [],
 })
 export class AuthenticationModule { }
-// http://icanstudioz.com/taxiapp/admin/users
