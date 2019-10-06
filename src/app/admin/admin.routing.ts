@@ -4,7 +4,6 @@ import { Routes, RouterModule } from '@angular/router';
 import { AdminComponent } from './admin.component';
 
 import { UserDetailsComponent } from './user-details/user-details.component';
-import { PaymentDetailsComponent } from './payment-details/payment-details.component';
 import { DriverDetailsComponent } from './driver-details/driver-details.component';
 import { RideDetailsComponent } from './ride-details/ride-details.component';
 
@@ -16,7 +15,6 @@ const adminRoutes: Routes = [
       { path: '', redirectTo: '/user-details', pathMatch: 'full' },
       { path: "user-details", component: UserDetailsComponent },
       { path: "driver-details", component: DriverDetailsComponent },
-      { path: "payment-details", component: PaymentDetailsComponent },
       { path: "ride-details", component: RideDetailsComponent }
     ]
   }];
