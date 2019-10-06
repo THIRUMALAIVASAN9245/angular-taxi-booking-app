@@ -7,7 +7,7 @@ import { JwtHelperService } from '@auth0/angular-jwt';
 export const TokenName: string = "jwt_Token";
 export const UserId: string = "userId";
 
-import { UserModel } from '../models/user-model';
+import { User } from '../models/user.model';
 
 @Injectable()
 export class AuthService {
@@ -54,9 +54,9 @@ export class AuthService {
     this.loggedIn.next(false);
   }
 
-  public login(userId: string, password: string): Observable<string> {
+  login(userId: string, password: string): Observable<string> {
     var bodyData = JSON.stringify({ userId: userId, password: password });
-    let url = `${this.baseUrl}` + "login";
+    let url = `${this.baseUrl}` + "User";
     let httpOptions = {
       headers: new HttpHeaders({
         'Content-Type': 'application/json'
@@ -67,12 +67,12 @@ export class AuthService {
         let body = response.json();
         var responseData = body || {};
         return responseData;
-      }), catchError(this.handleError('addSmartphone', null)));
+      }), catchError(this.handleError('login', null)));
   }
 
-  public Register(user: UserModel): Observable<boolean> {
-    var bodyData = JSON.stringify(user);
-    let url = `${this.baseUrl}`;
+  register(userData: User): Observable<boolean> {
+    var bodyData = JSON.stringify(userData);
+    let url = `${this.baseUrl}`  + "User";
     let httpOptions = {
       headers: new HttpHeaders({
         'Content-Type': 'application/json'
@@ -82,7 +82,7 @@ export class AuthService {
       let body = response.json();
       var responseData = body || {};
       return responseData;
-    }), catchError(this.handleError('addSmartphone', null)));
+    }), catchError(this.handleError('Register', null)));
   }
 
   private handleError<T>(operation = 'operation', result?: T) {

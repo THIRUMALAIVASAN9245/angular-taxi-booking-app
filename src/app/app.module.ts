@@ -14,6 +14,7 @@ import { AuthenticationModule } from './authentication/authentication.module';
 import { AdminModule } from './admin/admin.module';
 
 import { AuthService } from './providers/services/auth.service';
+import { BookingService } from './providers/services/booking.service';
 
 import { DashBoardComponent } from './dashboard/dashboard.component';
 
@@ -35,7 +36,8 @@ import { DashBoardComponent } from './dashboard/dashboard.component';
     AppRouting
   ],
   providers: [
-    AuthService
+    AuthService,
+    BookingService
   ],
   bootstrap: [AppComponent]
 })
