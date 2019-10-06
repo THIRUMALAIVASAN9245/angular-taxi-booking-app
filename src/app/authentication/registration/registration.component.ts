@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
     selector: 'app-registration',
     templateUrl: './registration.component.html'
 })
-export class RegistrationDetailsComponent implements OnInit {
+export class RegistrationComponent implements OnInit {
 
     constructor() { }
 

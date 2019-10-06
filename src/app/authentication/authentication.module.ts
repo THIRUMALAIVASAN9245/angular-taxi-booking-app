@@ -10,12 +10,14 @@ import { BsDatepickerModule } from 'ngx-bootstrap';
 import { AuthenticationRouting } from './authentication.routing';
 import { AuthComponent } from './auth.component';
 
-import { RegistrationDetailsComponent } from './registration/registration.component';
+import { RegistrationComponent } from './registration/registration.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
     AuthComponent,
-    RegistrationDetailsComponent
+    RegistrationComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

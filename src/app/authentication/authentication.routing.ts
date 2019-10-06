@@ -2,15 +2,17 @@ import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { AuthComponent } from './auth.component';
-import { RegistrationDetailsComponent } from './registration/registration.component';
+import { RegistrationComponent } from './registration/registration.component';
+import { LoginComponent } from './login/login.component';
 
 const appRoutes: Routes = [
   {
     path: 'auth',
     component: AuthComponent,
     children: [
-      { path: '', redirectTo: '/registration', pathMatch: 'full' },
-      { path: "registration", component: RegistrationDetailsComponent }
+      { path: '', redirectTo: '/login', pathMatch: 'full' },
+      { path: "login", component: LoginComponent },
+      { path: "registration", component: RegistrationComponent }
     ]
   }
 ];
