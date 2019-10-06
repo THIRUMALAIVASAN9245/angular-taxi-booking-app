@@ -177,3 +177,23 @@ a:hover, a:visited {
     margin-bottom: -15%;
     color: #495057;
 }
+
+@media (min-width: 600px) {
+    .loginform-lt {
+       padding-left: 15% !important;
+       padding-right: 15% !important;
+    }
+}
+@media (min-width: 760px) {
+    .loginform-lt {
+       padding-left: 22% !important;
+       padding-right: 22% !important;
+    }
+}
+@media (min-width: 1200px) {
+    .loginform-lt {
+      padding-left: 30% !important;
+      padding-right: 30% !important;
+    }
+}
+
