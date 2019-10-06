@@ -29,19 +29,21 @@
 				<div class="container register">
 					<div class="row">
 						<div class="col-md-3 register-left">
-							<img src="https://image.ibb.co/n7oTvU/logo_white.png" alt=""/>
+							<!-- <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt=""/> 
+							<img src="https://iconsplace.com/wp-content/uploads/_icons/ffffff/256/png/taxi-icon-18-256.png" alt=""/>-->
+              	<img src="https://cdn0.iconfinder.com/data/icons/transportation-methods/128/taxi_orange-512.png" alt=""/>
 							<h3>Welcome</h3>
 							<p>You are 30 seconds away from earning your own money!</p>
-							<!-- <input type="button" name="" (click)="onProductAdded($event)" routerLink="/auth/registration/customer" value="Login"/><br/> -->
-              <button class="btn btn-primary" (click)="changeText()" ion-button>{{buttonText}}</button> 
-            </div>
-							<div class="col-md-9 register-right">
-								<router-outlet></router-outlet>
-							</div>
+
+							<button class="btn btn-primary" (click)="changeText()" ion-button>{{buttonText}}</button>
+						</div>
+						<div class="col-md-9 register-right">
+							<router-outlet></router-outlet>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div style="background-color: #421853;padding-top: 15px;"></div>
+</div>
+<div style="background-color: #421853;padding-top: 15px;"></div>
