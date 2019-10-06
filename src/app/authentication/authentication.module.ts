@@ -11,12 +11,16 @@ import { AuthenticationRouting } from './authentication.routing';
 import { AuthComponent } from './auth.component';
 
 import { RegistrationComponent } from './registration/registration.component';
+import { CustomerComponent } from './registration/customer/customer.component';
+import { DriverComponent } from './registration/driver/driver.component';
 import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
     AuthComponent,
     RegistrationComponent,
+    CustomerComponent,
+    DriverComponent,
     LoginComponent
   ],
   imports: [
