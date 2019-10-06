@@ -26,29 +26,34 @@
 	<div class="collapse navbar-collapse" id="navbarCollapse">
 		<ul class="navbar-nav mr-auto">
 			<li class="nav-item">
-				<a [routerLinkActive]="['active']" class="nav-link text-capitalize" routerLink="/admin/user-details">Users</a>
+				<a [routerLinkActive]="['active']" class="nav-link text-capitalize"
+					routerLink="/admin/user-details">Customers</a>
 			</li>
 			<li class="nav-item">
 				<a [routerLinkActive]="['active']" class="nav-link text-capitalize"
-					routerLink="/admin/driver-details">Drivers</a>
+					routerLink="/admin/driver-details">Employees</a>
 			</li>
 			<li class="nav-item">
-				<a [routerLinkActive]="['active']" class="nav-link text-capitalize" routerLink="/admin/ride-details">Rides</a>
+				<a [routerLinkActive]="['active']" class="nav-link text-capitalize"
+					routerLink="/admin/ride-details">Rides</a>
 			</li>
 			<li class="nav-item">
 				<a [routerLinkActive]="['active']" class="nav-link text-capitalize"
 					routerLink="/admin/payment-details">Payment</a>
 			</li>
 		</ul>
-		<!-- <ul class="navbar-nav ml-auto">
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false"> Thirumalaivasan (568182)</a>
+		<ul class="navbar-nav ml-auto">
+			<li class="nav-item">
+				<a [routerLinkActive]="['active']" class="dropdown-item" routerLink="/auth/login">LogOut</a>
+			</li>
+			<!-- <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false"> LogOut</a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">View Profile</a>
+          <a class="dropdown-item" routerLink="/auth/login">LogOut</a>
         </div>
-      </li>
-    </ul> -->
+      </li> -->
+		</ul>
 	</div>
 </nav>
 <div style="background-color: #421853;padding-top: 15px;"></div>

@@ -13,9 +13,13 @@ const appRoutes: Routes = [
     component: AuthComponent,
     children: [
       { path: '', redirectTo: '/login', pathMatch: 'full' },
-      { path: "login", component: LoginComponent },
       {
-        path: "registration", component: RegistrationComponent,
+        path: "login",
+        component: LoginComponent
+      },
+      {
+        path: "registration",
+        component: RegistrationComponent,
         children: [
           { path: '', redirectTo: '/customer', pathMatch: 'full' },
           { path: "customer", component: CustomerComponent },
